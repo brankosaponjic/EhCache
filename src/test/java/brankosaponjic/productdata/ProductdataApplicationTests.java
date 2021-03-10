@@ -196,4 +196,21 @@ class ProductdataApplicationTests {
             System.out.println(p.getPrice());
         });
     }
+
+    //=======================================
+    // Storing procedures
+    @Test
+    void testFindAllProducts() {
+        System.out.println(productRepository.findAllProducts());
+    }
+
+    @Test
+    void testFindAllProductsByPrice() {
+        System.out.println(productRepository.findAllProductsByPrice(800));
+    }
+
+    @Test
+    void testFindAllProductsCountByPrice() {
+        System.out.println(productRepository.findAllProductsCountByPrice(800));
+    }
 }
